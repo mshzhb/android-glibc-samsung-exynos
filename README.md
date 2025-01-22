@@ -28,7 +28,7 @@ Open Termux on your device and run the following commands:
 ```bash
 termux-reset #optional
 termux-setup-storage
-termux-restore /storage/download/backup-native.tar.xz
+termux-restore ~/storage/download/backup-native.tar.xz
 cp -r $PREFIX/restore/* ~
 ```
 
