@@ -1,4 +1,4 @@
-# Native Glibc Environment for Samsung Exynos
+# Termux Native Glibc Environment for Samsung Exynos
 Termux native glibc environment for samsung xclipse GPU
 
 ## Installation Steps
