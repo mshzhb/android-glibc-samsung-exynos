@@ -54,9 +54,10 @@ To test DirectX 11 functionality:
  run cube.exe
  ```
 
-### Enable DRI3 (might flicking -> will fix soon)
+### Disable DRI3 (fix flicking -> will fix soon)
 ```bash
-sed -i 's/\b0\b/1/g' ~/amdVulkanSettings.cfg
+export AMD_CONFIG_DIR=~
+echo "ForcePresentViaCpuBlt,1" > ~/amdVulkanSettings.cfg
 ```
 
 
