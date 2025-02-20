@@ -1,4 +1,4 @@
-# Termux Native Glibc Environment for Samsung Exynos
+# Mobox for Samsung Exynos (xclipse gpu)
 Termux native glibc environment for samsung xclipse GPU (DRI3)
 
 ## Installation Steps
@@ -32,14 +32,21 @@ termux-restore ~/storage/download/backup-native.tar.xz
 cp -r $PREFIX/restore/* ~
 ```
 
-### 5. Launch the XFCE Desktop
+### 6. Launch Mobox
+To start the graphical environment in Termux:
+```bash
+//detailed instruction: https://github.com/olegos2/mobox
+mobox
+```
+
+## Optional. Launch the XFCE Desktop
 To start the graphical environment in Termux:
 ```bash
 chmod +x startxface4_termux.sh
 ./startxface4_termux.sh
 ```
 
-### Running Vulkan Tests
+## Running Vulkan Tests
 To test Vulkan functionality:
 Navigate to the Vulkan test binaries directory:
  ```bash
@@ -47,14 +54,14 @@ Navigate to the Vulkan test binaries directory:
  grun ./executable
  ```
 
-### Running DX11 Tests
+## Running DX11 Tests
 To test DirectX 11 functionality:
  ```bash
  cd ~/workspace/rubic/release-dx11
  run cube.exe
  ```
 
-### Disable DRI3 (fix flicking -> will fix soon)
+## Disable DRI3 (fix flicking -> will fix soon)
 ```bash
 export AMD_CONFIG_DIR=~
 echo "ForcePresentViaCpuBlt,1" > ~/amdVulkanSettings.cfg
