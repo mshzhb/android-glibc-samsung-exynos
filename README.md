@@ -1,5 +1,5 @@
 # Mobox for Samsung Exynos (xclipse gpu)
-Termux native glibc environment for samsung xclipse GPU (DRI3)
+Native glibc environment for samsung xclipse GPU (DRI3)
 
 ## Installation Steps
 ### 1. Install Dependencies
