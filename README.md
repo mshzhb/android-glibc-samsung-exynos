@@ -19,6 +19,7 @@ adb shell settings put global settings_enable_monitor_phantom_procs false
 ### 3. Transfer Backup File
 Link: 
 Copy the backup file to your computer
+backup-native.tar.xz: https://mega.nz/file/edZFjKhZ#zi-7xDyzLUiFa4DbU0AIo7qOmQcMTwMXVFF0yt0pcjE
 ```bash
 adb push backup-native.tar.xz /sdcard/Download/
 ```
@@ -60,12 +61,6 @@ To test DirectX 11 functionality:
  cd ~/workspace/rubic/release-dx11
  run cube.exe
  ```
-
-## Disable DRI3 (fix flicking -> will fix soon)
-```bash
-export AMD_CONFIG_DIR=~
-echo "ForcePresentViaCpuBlt,1" > ~/amdVulkanSettings.cfg
-```
 
 
 
