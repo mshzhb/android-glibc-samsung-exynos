@@ -1,7 +1,13 @@
-# Mobox for Samsung Exynos (xclipse gpu)
-Native glibc environment for samsung xclipse GPU (DRI3)
-![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/SHAmlbQAxXM/0.jpg)
-https://www.youtube.com/watch?v=SHAmlbQAxXM
+# Mobox for Samsung Exynos (Xclipse GPU)  
+**Native glibc Environment with DRI3 Support**
+
+🚀 A lightweight Linux container (Mobox) running on **Samsung Exynos** with **Xclipse GPU**, featuring native `glibc` and full **DRI3** support for accelerated graphics.
+
+🎥 **Demo Video**:  
+[![Mobox on Xclipse GPU](https://img.youtube.com/vi/SHAmlbQAxXM/0.jpg)](https://www.youtube.com/watch?v=SHAmlbQAxXM)
+
+🔗 [Watch on YouTube](https://www.youtube.com/watch?v=SHAmlbQAxXM)
+
 ## Installation Steps
 ### 1. Install Dependencies
 - **Install Termux**:  
@@ -18,10 +24,14 @@ adb shell settings put global settings_enable_monitor_phantom_procs false
 ```
 
 ### 3. Transfer Backup File
-backup-native.tar.xz: https://mega.nz/file/edZFjKhZ#zi-7xDyzLUiFa4DbU0AIo7qOmQcMTwMXVFF0yt0pcjE
+
+📦 **Download Backup File:**  
+[`backup-native.tar.xz`](https://mega.nz/file/edZFjKhZ#zi-7xDyzLUiFa4DbU0AIo7qOmQcMTwMXVFF0yt0pcjE)
+
+📲 **Push to Device via ADB:**
 ```bash
 adb push backup-native.tar.xz /sdcard/Download/
-```
+
 
 ### 4. Restore the Environment in Termux
 Open Termux on your device and run the following commands:
