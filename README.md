@@ -31,7 +31,7 @@ adb shell settings put global settings_enable_monitor_phantom_procs false
 📲 **Push to Device via ADB:**
 ```bash
 adb push backup-native.tar.xz /sdcard/Download/
-
+```
 
 ### 4. Restore the Environment in Termux
 Open Termux on your device and run the following commands:
